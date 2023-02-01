@@ -28,7 +28,22 @@ div {
 
 
 .header_h1 {
-    background-color: #141e26;
+    font-size: 3.5rem;
+    background-color: #11191f;
+    text-align: start;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+.header_p_top {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+    color: rgba(115, 130, 140, 2);
+}
+
+.header_p_bottom {
+    margin-top: 2rem;
+    font-size: 1.5rem;
+    
 }
 
 ul {
@@ -57,19 +72,38 @@ a:hover {
 }
 
 .container__header {
-    text-align: center;
-    font-size: 20px;
     margin: 5px;
     padding: 5px;
+}
+
+.about_container {
+    margin-top: 20rem;
+    display: flex;
+    justify-content: center;
+
+}
+
+.about_p {
+    font-size: 2rem;
+    
 }
 
 .main_content_container {
     display: flex;
     justify-content: center;
-    padding-top: 50px;
+    padding-top: 30rem;
     flex-wrap: wrap;
 }
 
+@media screen and (max-width: 600px ) {
+    .main_content_container {
+        flex-direction: column;
+        align-items: center;
+        }
+    }
+
+
+/*   card styles        */
 .card__outer_container {
     display: flex;
     flex-direction: column;
@@ -94,8 +128,13 @@ a:hover {
     text-align: center;
 }
 
-.description {
-    background-color: #141e26;
+.image_container {
+
+}
+
+.image {
+    width: 100%;
+    height: 200px;
 }
 
 .card_inner_container {
@@ -107,43 +146,22 @@ a:hover {
     align-items: center;
 }
 
-
-
-.image {
-    width: 100%;
-    height: 200px;
+.description {
+    text-align: center;
+    background-color: #141e26;
 }
 
-@media screen and (max-width: 600px ) {
-    .main_content_container {
-        flex-direction: column;
-        align-items: center;
-        }
-    }
-
-   
-
-    .project_button:hover {
-        background-color: hsl(205deg, 10%, 50%);
-        transition: 0.2s ease-in-out;
-    }
-
+.button_container {
+    background-color: #141e26;
+    overflow: hidden;
+    white-space: nowrap;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     
-    p {
-        text-align: center;
-    }
+}
 
-    .button_container {
-        background-color: #141e26;
-        overflow: hidden;
-        white-space: nowrap;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-       
-    }
-
-   .button_a{
+.button_a{
     width: 100px;
     height: 40px;
     border: none;
@@ -154,6 +172,9 @@ a:hover {
     text-align: center;
     text-decoration: none;
 }
-   
 
-  
+
+.project_button:hover {
+    background-color: hsl(205deg, 10%, 50%);
+    transition: 0.2s ease-in-out;
+}

@@ -2,6 +2,7 @@ import Header from './Header';
 import './App.css';
 import Nav from './Nav';
 import Main from './Main'
+import About from './About';
 
 
 function App() {
@@ -9,6 +10,7 @@ function App() {
     <>
     <Nav />
     <Header /> 
+    <About />
     <Main />
     </>
   );

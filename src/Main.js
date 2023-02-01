@@ -3,7 +3,7 @@ import { useState } from "react";
 
 const Main = () => {
 
- const [item, setItems] = useState([{
+const projects = [{
         id: 1,
         image: '2',
         title: 'NHCRN', 
@@ -25,25 +25,18 @@ const Main = () => {
         url: 'https://ajrego13.github.io/To-Do-List-2.0/'
     },
     {
-        id: 3,
+        id: 4,
         image: '5',
         title: 'Weather App', 
         description: 'I built this with HTML, CSS and Javascript',
         url: 'https://ajrego13.github.io/Weather-APP/'
     }
-
-])
+]
     return (
         <>
             <main id="projects" className="main_content_container">
-                {item.map((item) => (
-                    <Card 
-                    key={item.id} 
-                    image={item.image} 
-                    title={item.title} 
-                    description={item.description}
-                    url={item.url}
-                    />
+                {projects.map((project) => (
+                    <Card {...project} key={project.id}/>
                 ))}
             </main>
            
